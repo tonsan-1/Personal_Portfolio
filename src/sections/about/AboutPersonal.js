@@ -159,11 +159,10 @@ class AboutPersonal extends React.Component {
                                 <Heading>About Me</Heading>
                                 <Separator />
                                 <Text>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
-                                    type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                                    It was popularised in the 1960s with the release of 
-                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    My name is Stoyan Kostadinov aka (Tonsan1) and I've recently completed the C# Full-Stack Web Development courses at <a href="https://softuni.bg/">Software University</a>.
+                                    I'm highly motivated and detail oriented with a constant desire to learn about new technologies and ways to write clean code.
+                                    <br></br>
+                                    If you think that I'm a good match to your job offer, feel free to get in touch any time!
                                 </Text>
                                 <TabsPart />
                             </AnimationContainer>
@@ -173,31 +172,17 @@ class AboutPersonal extends React.Component {
                 <CounterRow>
                     <Container>
                         <Row>
-                            <Col md={3}>
+                            <Col md={6}>
                                 <AnimationContainer animation="fadeIn" delay={1000}>
                                     <CounterComponent>
-                                        <Counter value={5} duration={5} delay={1000} symbol="+" text="5 Years of Experience" animation={true} />
+                                        <Counter value={2} duration={5} delay={1000} symbol="+" text="2 Years of Experience" animation={true} />
                                     </CounterComponent>
                                 </AnimationContainer>
                             </Col>
-                            <Col md={3}>
+                            <Col md={6}>
                                 <AnimationContainer animation="fadeIn" delay={1000}>
                                     <CounterComponent>
-                                        <Counter value={100} duration={5} delay={1000} symbol="+" text="Clients Worked With" animation={true} />
-                                    </CounterComponent>
-                                </AnimationContainer>
-                            </Col>
-                            <Col md={3}>
-                                <AnimationContainer animation="fadeIn" delay={1000}>
-                                    <CounterComponent>
-                                        <Counter value={5} duration={5} delay={1000} text="Certifications" animation={true} />
-                                    </CounterComponent>
-                                </AnimationContainer>
-                            </Col>
-                            <Col md={3}>
-                                <AnimationContainer animation="fadeIn" delay={1000}>
-                                    <CounterComponent>
-                                        <Counter value={10} duration={5} delay={1000} symbol="+" text="Honourable Awards" animation={true} />
+                                        <Counter value={11} duration={5} delay={1000} text="Certifications" animation={true} />
                                     </CounterComponent>
                                 </AnimationContainer>
                             </Col>

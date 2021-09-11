@@ -167,24 +167,21 @@ class HeroPersonal extends React.Component {
                             Hello, I'm
                         </SubHeading>
                         <Heading className="parallax-hero-item">
-                            <Glitch text="John Doe" />
+                            <Glitch text="TONSAN1" />
                         </Heading>
                         <Type className="parallax-hero-item">
                             <Typewriter
                                 options={{
                                 strings: [
-                                    'App Developer',
-                                    'Web Designer',
-                                    'UX Developer',
+                                    'Junior Full-Stack Web Developer',
+                                    'With',
+                                    '.NET & React JS',
                                 ],
                                 autoStart: true,
                                 loop: true,
                                 }}
                             />
                         </Type>
-                        <Resume href="./">
-                            Download Resume
-                        </Resume>
                     </HeadingBox>
                     {this.shapes()}
                 </Overlay>

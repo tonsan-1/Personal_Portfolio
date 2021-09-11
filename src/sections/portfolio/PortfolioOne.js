@@ -37,22 +37,32 @@ class PortfolioOne extends React.Component {
     }
 
   portfolio() {
-      const { items } = this.props
       
-      return items.map((value, index) => {
         return (
-          <Col md={4} key={index}>
+          <Row>
+            <Col md={6} key={123}>
               <PortfolioItem 
-                index={index} 
-                image={value.content.frontmatter.image.childImageSharp.fluid.src} 
-                text={value.content.frontmatter.title} 
-                category={value.content.frontmatter.category}
-                link={value.content.frontmatter.link}
+                index={1} 
+                image='/img/endlesstv.jpg'
+                text='EndlessTV - Online Movies' 
+                category='React JS'
+                link='https://endlesstv.web.app/'
+                type="col"
+              />
+              
+          </Col>
+          <Col md={6} key={321}>
+              <PortfolioItem 
+                index={2} 
+                image='/img/jobzy.jpg'
+                text='Jobzy - Freelance Marketplace' 
+                category='ASP.NET Core'
+                link='https://jobzy.azurewebsites.net/'
                 type="col"
               />
           </Col>
+          </Row>
         )
-      })
     }
 }
 
@@ -60,7 +70,7 @@ export default props => (
   <StaticQuery
       query={graphql`
           query {
-              items: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(portfolio)/"}}, sort: {fields: [frontmatter___id], order: ASC}, limit: 6) {
+              items: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(portfolio)/"}}, sort: {fields: [frontmatter___id], order: ASC}, limit: 2) {
                 edges {
                   content: node {
                     frontmatter {

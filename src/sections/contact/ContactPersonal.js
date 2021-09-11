@@ -3,7 +3,6 @@ import { Row, Col, Container } from 'react-bootstrap'
 import { graphql, StaticQuery } from 'gatsby'
 import styled, { keyframes } from 'styled-components'
 import AnimationContainer from 'components/animation-container'
-import ContactPersonalForm from './parts/ContactPersonalForm.js'
 
 class ContactPersonal extends React.Component {
 
@@ -14,19 +13,7 @@ class ContactPersonal extends React.Component {
             position: relative;
             overflow: hidden;
             background-color: #000;
-            padding: 100px 0;
-        `
-
-        const FormRow = styled(Row)`
-           background-color: #111;
-        `
-
-        const ContactCol = styled(Col)`
-            min-height: 600px;
-            max-height: 600px;
-            padding: 0;
-            display: flex;
-            align-items: center;
+            padding: 5px 0 100px;
         `
 
         const gradientAnimation = keyframes`
@@ -39,26 +26,6 @@ class ContactPersonal extends React.Component {
             100% {
                 background-position: 15% 0%;
             }
-        `
-
-        const Gradient = styled.div`
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            clip-path: polygon(0% 100%, 10px 100%, 10px 10px, calc(100% - 10px) 10px, calc(100% - 10px) calc(100% - 10px), 10px calc(100% - 10px), 10px 100%, 100% 100%, 100% 0%, 0% 0%);
-            background: linear-gradient(120deg, #04e5e5, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-            background-size: 300% 300%;
-            animation: ${gradientAnimation} 5s ease-in-out infinite;
-        `
-
-
-
-
-        const Map = styled.iframe`
-            border: none;
-            height: 100%;
-            width: 100%;
         `
 
         const IconRow = styled(Row)`
@@ -126,19 +93,6 @@ class ContactPersonal extends React.Component {
         return(
             <Section id="contact">
                 <Container>
-                  <AnimationContainer animation="fadeIn">
-                    <FormRow>
-                      <ContactCol md={6}>
-                          <ContactPersonalForm />
-                          <Gradient />
-                      </ContactCol>
-                      <ContactCol md={6}>
-                        <Map  
-                          title="map"
-                          src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"/>
-                      </ContactCol>
-                    </FormRow>
-                  </AnimationContainer>
                   <IconRow>
                       <IconCol md={4}>
                         <AnimationContainer animation="fadeIn" delay={500}>
@@ -151,8 +105,8 @@ class ContactPersonal extends React.Component {
                                 Email
                               </InfoTitle>
                               <InfoLinkContainer>
-                                <InfoLink href="mailto:email@yoursite.com">
-                                  email@yoursite.com
+                                <InfoLink href="mailto:tonsan221@gmail.com">
+                                  tonsan221@gmail.com
                                 </InfoLink>
                               </InfoLinkContainer>
                             </Info>
@@ -163,15 +117,15 @@ class ContactPersonal extends React.Component {
                         <AnimationContainer animation="fadeIn" delay={1000}>
                           <InfoPart>
                             <IconContainer>
-                              <Icon src={this.props.phoneIcon.childImageSharp.fluid.src} alt="phone" />
+                              <Icon src={this.props.phoneIcon.childImageSharp.fluid.src} alt="phone"/>
                             </IconContainer>
                             <Info>
                               <InfoTitle>
-                                Phone
+                                LinkedIn
                               </InfoTitle>
                               <InfoLinkContainer>
-                                <InfoLink href="tel:+(123)123-1234">
-                                  (123) 456-7890
+                                <InfoLink href="https://www.linkedin.com/in/tonsan1/">
+                                  Check my Profile
                                 </InfoLink>
                               </InfoLinkContainer>
                             </Info>
@@ -186,11 +140,11 @@ class ContactPersonal extends React.Component {
                             </IconContainer>
                             <Info>
                               <InfoTitle>
-                                Address
+                                GitHub
                               </InfoTitle>
                               <InfoLinkContainer>
-                                <InfoLink target="_blank" href="https://maps.google.com/maps?ll=53.343244,-6.259338&z=14&t=m&hl=en&gl=US&mapclient=embed&q=1%20Grafton%20Street%20Dublin%20Ireland">
-                                  1 Grafton Street Dublin Ireland
+                                <InfoLink target="_blank" href="https://github.com/tonsan-1">
+                                  Check my Profile
                                 </InfoLink>
                               </InfoLinkContainer>
                             </Info>

@@ -1,40 +1,35 @@
 import React from 'react'
-import Layout from 'components/layout'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import Hero from 'sections/hero/Hero.js'
-import AboutOne from 'sections/about/AboutOne.js'
-import ServicesOne from 'sections/services/ServicesOne.js'
-import PortfolioOne from 'sections/portfolio/PortfolioOne.js'
-import TestimonialsOne from 'sections/testimonials/TestimonialsOne.js'
-import TeamOne from 'sections/team/TeamOne.js'
-import ClientsOne from 'sections/clients/ClientsOne.js'
-import ContactCreative from 'sections/contact/ContactCreative.js'
+import Layout from 'components/layout'
+import HeroPersonal from 'sections/hero/HeroPersonal.js'
+import AboutPersonal from 'sections/about/AboutPersonal.js'
+import ContactPersonal from 'sections/contact/ContactPersonal.js'
+import PortfolioOne from '../sections/portfolio/PortfolioOne.js'
+import PortfolioThree from '../sections/portfolio/PortfolioThree.js'
+
 
 class Index extends React.Component {
 
   render() {
-
+    
     const { site } = this.props.data
 
     return (
       <div>
         <Helmet>
-          <title>{site.meta.title}</title>
+          <title>Tonsan1 - Personal Portfolio</title>
           <meta name="description" content={site.meta.description} />
         </Helmet>
         <Layout
           isHome={true}
-          sections={['home', 'about', 'services', 'portfolio', 'testimonials', 'team', 'clients', 'contact']}
+          sections={['home', 'about', 'portfolio', 'certificates', 'contact']}
         >
-          <Hero />
-          <AboutOne />
-          <ServicesOne />
+          <HeroPersonal />
+          <AboutPersonal />
           <PortfolioOne />
-          <TestimonialsOne />
-          <TeamOne />
-          <ClientsOne />
-          <ContactCreative />
+          <PortfolioThree />
+          <ContactPersonal />
         </Layout>
       </div>
     )
@@ -43,7 +38,7 @@ class Index extends React.Component {
 
 export default Index
 
-export const creativeOneQuery = graphql`
+export const personalQuery = graphql`
   query {
     site {
       meta: siteMetadata {

@@ -74,6 +74,11 @@ class TabsPart extends React.Component {
             display: none;
             animation: ${Fade} 1s forwards;
         `
+        const Text = styled.p`
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+        `
 
         return(
             <TabContainer>
@@ -92,11 +97,22 @@ class TabsPart extends React.Component {
                     <Tab style={{
                         display: this.state.tab === "skills" ? "block" : "none"
                     }}>
-                        <Progress value={90} text="React" />
-                        <Progress value={80} text="Angular" />
-                        <Progress value={10} text="MongoDB" />
-                        <Progress value={100} text="PHP" />
-                        <Progress value={80} text="MySQL" />
+                        <Text>
+                            Front-End
+                        </Text>
+                        <Progress value={90} text="Javascript" />
+                        <Progress value={85} text="React" />
+                        <Progress value={50} text="JQuery" />
+                        <Progress value={90} text="Bootstrap" />
+                        <Progress value={95} text="HTML/CSS" />
+                        <Text>
+                            Back-End
+                        </Text>
+                        <Progress value={90} text="C# OOP" />
+                        <Progress value={85} text="ASP.NET Core" />
+                        <Progress value={80} text="MS SQL" />
+                        <Progress value={60} text="Signal-R" />
+                        <Progress value={80} text="Entity Framework Core" />
                     </Tab>
                 </Tabs>
                 <Tabs>
@@ -104,26 +120,24 @@ class TabsPart extends React.Component {
                             display: this.state.tab === "experience" ? "block" : "none"
                         }}>
                         <Timeline data={{
-                                "2001 - 2005" :  {
-                                    title: "Junior Developer",
-                                    institution: "Lorem Softwares",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
+                                "April 2021" :  {
+                                    title: "ReactJS Defense Project",
+                                    institution: "Software University",
+                                    description: `EndlessTV is a free platform where you can watch your favorite movies with just a click of
+                                    button. All you need is a quick registration and you'll have access to various movie genres,
+                                    top rated movies or even the latest hits. Once you've picked your movies, EndlessTV
+                                    provides an option to put them in a neat Favorites list. There is also a comment section in
+                                    each movie, so you can share your movie experience with others.`
                                 },
-                                "2007 - 2010" : {
-                                    title: "Senior Developer",
-                                    institution: "Ipsum Technologies",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
+                                "August 2021" : {
+                                    title: "ASP.NET Core Defense Project",
+                                    institution: "Software University",
+                                    description: `Jobzy is a freelance marketplace with users an having option to choose between being
+                                    employers or freelancers. Depending on the created account, users can send offers or post
+                                    jobs. After successfully accepting an offer by the employers, an automatic contract is
+                                    generated to ease the communication between both parties. Completing the contract can
+                                    be done by card payment, by which the freelancer gets paid.`
                                 },
-                                "2012 - 2018" : {
-                                    title: "Data Scientist",
-                                    institution: "Dolor AI",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
-                                },
-                                "2018 - Now" : {
-                                    title: "AI Scientist",
-                                    institution: "Ipsum AI",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
-                                }
                             }
                         }
                     />
@@ -132,30 +146,13 @@ class TabsPart extends React.Component {
                             display: this.state.tab === "education" ? "block" : "none"
                         }}>
                         <Timeline data={{
-                                "2001 - 2005" :  {
-                                    title: "High School Degree",
-                                    institution: "Lorem High School",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
+                                "2019 - 2021" :  {
+                                    title: "Full Stack .NET Web Developer",
+                                    institution: "Software University"
                                 },
-                                "2007 - 2010" : {
-                                    title: "College Degree",
-                                    institution: "Ipsum College",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
-                                },
-                                "2012 - 2018" : {
-                                    title: "B.Sc in Computer Science",
-                                    institution: "Dolor University",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
-                                },
-                                "2018 - Now" : {
-                                    title: "PhD in AI",
-                                    institution: "Amet University",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
-                                },
-                                "2019 - Now" : {
-                                    title: "PhD in Data Science",
-                                    institution: "Dolor University",
-                                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
+                                "2011 - 2015" : {
+                                    title: "Operational Accounting",
+                                    institution: "High School Degree"
                                 },
                             }
                         }
