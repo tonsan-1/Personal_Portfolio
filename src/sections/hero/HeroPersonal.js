@@ -173,9 +173,7 @@ class HeroPersonal extends React.Component {
                             <Typewriter
                                 options={{
                                 strings: [
-                                    'Junior Full-Stack Web Developer',
-                                    'With',
-                                    '.NET & React JS',
+                                    'Junior Full-Stack C# Web Developer',
                                 ],
                                 autoStart: true,
                                 loop: true,

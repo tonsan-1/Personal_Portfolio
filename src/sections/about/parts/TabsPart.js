@@ -102,7 +102,7 @@ class TabsPart extends React.Component {
                         </Text>
                         <Progress value={90} text="Javascript" />
                         <Progress value={85} text="React" />
-                        <Progress value={50} text="JQuery" />
+                        <Progress value={75} text="AJAX" />
                         <Progress value={90} text="Bootstrap" />
                         <Progress value={95} text="HTML/CSS" />
                         <Text>
@@ -112,6 +112,7 @@ class TabsPart extends React.Component {
                         <Progress value={85} text="ASP.NET Core" />
                         <Progress value={80} text="MS SQL" />
                         <Progress value={60} text="Signal-R" />
+                        <Progress value={75} text="WEB API" />
                         <Progress value={80} text="Entity Framework Core" />
                     </Tab>
                 </Tabs>
@@ -127,16 +128,20 @@ class TabsPart extends React.Component {
                                     button. All you need is a quick registration and you'll have access to various movie genres,
                                     top rated movies or even the latest hits. Once you've picked your movies, EndlessTV
                                     provides an option to put them in a neat Favorites list. There is also a comment section in
-                                    each movie, so you can share your movie experience with others.`
+                                    each movie, so you can share your movie experience with others.
+                                    
+                                    Check the GitHub of the project: https://github.com/tonsan-1/EndlessTv`
                                 },
                                 "August 2021" : {
                                     title: "ASP.NET Core Defense Project",
                                     institution: "Software University",
-                                    description: `Jobzy is a freelance marketplace with users an having option to choose between being
+                                    description: `Jobzy is a freelance marketplace with users having an option to choose between being
                                     employers or freelancers. Depending on the created account, users can send offers or post
                                     jobs. After successfully accepting an offer by the employers, an automatic contract is
                                     generated to ease the communication between both parties. Completing the contract can
-                                    be done by card payment, by which the freelancer gets paid.`
+                                    be done by card payment, by which the freelancer gets paid.
+                                    
+                                    Check the GitHub of the project: https://github.com/tonsan-1/Jobzy`
                                 },
                             }
                         }
@@ -147,7 +152,7 @@ class TabsPart extends React.Component {
                         }}>
                         <Timeline data={{
                                 "2019 - 2021" :  {
-                                    title: "Full Stack .NET Web Developer",
+                                    title: "Full Stack C# Web Developer",
                                     institution: "Software University"
                                 },
                                 "2011 - 2015" : {
